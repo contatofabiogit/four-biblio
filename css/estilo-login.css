@@ -2,14 +2,19 @@
     max-width: 400px;
     border: solid 1px #000;
     border-radius: 25px;
-    margin-top: 150px;
+    margin-top: 90px;
     padding: 30px;
     box-shadow: 10px 10px 40px #000;
 }
 
-.img-responsive{
+.imagem1{
     max-width: 200px;
     margin: 0 auto;
+}
+
+.imagem2{
+    width: 400px;
+    padding-top: 30px;
 }
 
 .input-group{
@@ -20,10 +25,6 @@
     padding: 20px;
     font-family: Century Gothic;
     font-size: 16px;
-}
-
-.row img{
-    width: 400px;
 }
 
 .btn-four {
@@ -82,4 +83,8 @@ fieldset[disabled] .btn-four.focus {
 .btn-four .badge {
   color: #1F7593;
   background-color: #fff;
+}
+
+.botao{
+    margin: 0 auto;
 }

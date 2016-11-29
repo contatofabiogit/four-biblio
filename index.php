@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -15,32 +11,25 @@ and open the template in the editor.
     </head>
     <body>
         <div class="container principal">
-            <div class = "page-header">
-                <img src="img/logo.png" class="img-responsive" />
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon" id="icone"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" placeholder="LOGIN" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon" id="icone"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" placeholder="SENHA" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group">
-                <button type="submit" class="btn btn-four">ACESSAR <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i></button>
-            </div>
-            
-        </div>
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class=" col-md-12 text-center">
-                        <img class="img-responsive tamanho" src="img/rodape.png" />
-                    </div>              
+            <form method="POST" action="./processamento/validacao_login.php">
+                <div class = "page-header">
+                    <img src="img/logo.png" class="img-responsive imagem1" />
                 </div>
-            </div>
-        </footer>
-
+                <div class="input-group">
+                    <span class="input-group-addon" id="icone"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="usuario" placeholder="LOGIN" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="icone"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="senha" placeholder="SENHA" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group botao">
+                    <button type="submit" class="btn btn-four">ACESSAR <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i></button>
+                </div>
+            </form>
+            <footer>
+                <img src="img/rodape.png" class="img-responsive imagem2 text-center" />
+            </footer>
+        </div>
     </body>
 </html>
